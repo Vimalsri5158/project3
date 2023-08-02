@@ -84,29 +84,33 @@ return (
                             height: '200px' 
                         }} />}
 
-                <h3 style={{ 
-                    fontSize: '14px', 
-                    fontWeight: 'bold', 
-                    marginLeft: '20px' 
+                <p style={{ marginLeft: '20px' }}>
+                    <span style={{ 
+                        fontSize: '14px', 
+                        fontWeight: 'bold', 
+                        textAlign: 'center',
+                        color:'lightgreen'  
                 }}>
-                NAME: {user.name}</h3>
+                NAME:</span>&nbsp; {user.name}</p>
                 
                 <p style={{ marginLeft: '20px' }}>
                     <span style={{ 
                         fontSize: '14px', 
                         fontWeight: 'bold', 
-                        textAlign: 'center' 
+                        textAlign: 'center',
+                        color:'lightgreen' 
                     }}>
-                    AGE:</span> 
+                    AGE:</span> &nbsp;
                     {user.age}
                 </p>
 
                 <p style={{ marginLeft: '20px' }}>
                     <span style={{ 
                         fontSize: '14px', 
-                        fontWeight: 'bold' 
+                        fontWeight: 'bold',
+                        color:'lightgreen'  
                         }}>
-                        GENDER:</span> 
+                        GENDER:</span> &nbsp;
                         {user.gender}
                 </p>
                 <br />
