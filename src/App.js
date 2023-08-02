@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 
 import './App.css';
 
@@ -11,38 +12,51 @@ import Profile from  './Components/Profile';
 import EditProfile from  './Components/EditProfile';
 
 function App() {
+
   return (
-    <div className="App">
+
+    <div className="App" >
     <BrowserRouter>
-    <Link to="/Dashboard">Dashboard </Link>&nbsp;&nbsp;
-    <Link to="/Dashboard/Users">Users </Link>&nbsp;&nbsp;
-    <Link to="/Dashboard/Create">Create</Link>&nbsp;&nbsp;
-    <Link to="/Dashboard/Edit">Edit </Link>&nbsp;&nbsp;
-    <Link to="/Dashboard/Profile">Profile</Link>&nbsp;&nbsp;
-    <Link to="/Dashboard/EditProfile">EditProfile </Link>&nbsp;&nbsp;
-    <Routes>
-    <Route path='/' element={<Dashboard />} />
-    <Route path='/Dashboard' element={<Dashboard />} />
-    <Route path='/Dashboard/Users' element={<Users />} />
-    <Route path='/Dashboard/Create' element={<Create />} />
-    <Route path='/Dashboard/Edit' element={<Edit />} />
-    <Route path='/Dashboard/Profile' element={<Profile />} />
-    <Route path='/Dashboard/EditProfile' element={<EditProfile />} />
-    <Route path='*' element={<Navigate to="/Dashboard" replace />} />
-    </Routes>
+      <header>
+        <table>
+          <tr>
+            <td className="td">
+              <Link to="/Dashboard">Dashboard</Link>
+            </td>
+            <td className="td">
+              <Link to="/Dashboard/Users">Users</Link>
+            </td>
+            <td className="td">
+              <Link to="/Dashboard/Create">Create</Link>
+            </td>
+            <td className="td">
+              <Link to="/Dashboard/Edit">Edit</Link>
+            </td>
+            <td className="td">
+              <Link to="/Dashboard/Profile">Profile</Link>
+            </td>
+            <td className="td">
+              <Link to="/Dashboard/EditProfile">EditProfile</Link>
+            </td>
+          </tr>
+        </table>
+      </header>
+    
+      <Routes>
+        <Route index path='/' element={<Dashboard />} />
+          <Route path='Dashboard'>
+            <Route index element={<Dashboard />} />
+            <Route path='Users' element={<Users />} />
+            <Route path='Create' element={<Create />} />
+            <Route path='Edit' element={<Edit />} />
+            <Route path=':Profile' element={<Profile />} />
+            <Route path=':EditProfile' element={<EditProfile />} />
+          </Route>
+        <Route path='/404' element={<h3>Page not found, please check url</h3>} />
+        <Route path='*' element={<Navigate to="/Dashboard" replace />} />
+      </Routes>
+
     </BrowserRouter>
-
-      <br />
-      
-      <br />
-      
-      <br />
-      
-      <br />
-      
-      <br />
-      
-
     </div>
   );
 }

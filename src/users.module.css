@@ -1,0 +1,17 @@
+body{
+background-image: url("Image/wassily.jpg");
+background-repeat: no-repeat;
+object-fit:cover;
+background-position: center;
+background-size: cover;
+}
+
+.form{
+    width: 300px;
+    margin: 20vh 80vh;
+    background-color:rgba(5, 62, 10, 0.432) ;
+    color: white;
+    border-radius: 5px;
+    padding: 30px;
+    justify-content: center;
+}

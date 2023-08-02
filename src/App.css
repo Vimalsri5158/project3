@@ -1,1 +1,23 @@
+header{
+    text-decoration: none;
+    background-color: rgba(128, 128, 128, 0.527);
+    padding: 10px;
 
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header a:hover{
+    color: brown;
+}
+
+td{
+    width: 15rem;
+    
+}
