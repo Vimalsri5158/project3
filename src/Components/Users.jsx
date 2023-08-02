@@ -93,7 +93,6 @@ const Users = () => {
             value="male"
             checked={formData.gender === "male"}
             onChange={handleChange}
-            required
           />
           Male
         </label><br />&nbsp;&nbsp;&nbsp;
@@ -104,7 +103,6 @@ const Users = () => {
             value="female"
             checked={formData.gender === "female"}
             onChange={handleChange}
-            required
           />
           Female
         </label><br />&nbsp;&nbsp;&nbsp;
@@ -115,7 +113,7 @@ const Users = () => {
             value="other"
             checked={formData.gender === "other"}
             onChange={handleChange}
-            required
+          
           />
           Other
         </label>
