@@ -2,7 +2,6 @@ header{
     text-decoration: none;
     background-color: rgba(128, 128, 128, 0.527);
     padding: 10px;
-
 }
 
 header a{
@@ -18,6 +17,5 @@ header a:hover{
 }
 
 td{
-    width: 15rem;
-    
+    width: 15rem;   
 }
