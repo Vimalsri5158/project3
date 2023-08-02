@@ -65,6 +65,7 @@ const Users = () => {
           placeholder="Enter your name..."
           value={formData.name}
           onChange={handleChange}
+          required
         />
         <br />
       </div>
@@ -78,6 +79,7 @@ const Users = () => {
           placeholder="Enter your age..."
           value={formData.age}
           onChange={handleChange}
+          required
         />
         <br />
       </div>
@@ -91,6 +93,7 @@ const Users = () => {
             value="male"
             checked={formData.gender === "male"}
             onChange={handleChange}
+            required
           />
           Male
         </label><br />&nbsp;&nbsp;&nbsp;
@@ -101,6 +104,7 @@ const Users = () => {
             value="female"
             checked={formData.gender === "female"}
             onChange={handleChange}
+            required
           />
           Female
         </label><br />&nbsp;&nbsp;&nbsp;
@@ -111,6 +115,7 @@ const Users = () => {
             value="other"
             checked={formData.gender === "other"}
             onChange={handleChange}
+            required
           />
           Other
         </label>
@@ -124,6 +129,7 @@ const Users = () => {
           name="image"
           value={formData.image}
           onChange={handleChange}
+          required
         /><br />
       </div>
 
